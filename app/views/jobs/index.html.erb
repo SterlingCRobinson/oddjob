@@ -1,1 +1,9 @@
 index.html.erb
+
+<div class="wrapper">
+	<% @jobs.each do |job| %>
+		<%= jobs.title %>
+		<%= job.location %>
+		<%= job.cost %>
+	<% end %>
+</div>
