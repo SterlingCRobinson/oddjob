@@ -3,10 +3,30 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
+	<div class="field">
+		<%= f.label :avatar %><br />
+		<%= f.file_field :avatar %>
+	</div>
+
+	<div class="field">
+		<%= f.label "First Name" %><br />
+		<%= f.text_field :fname %>
+	</div>	
+
+	<div class="field">
+		<%= f.label "Last Name" %><br />
+		<%= f.text_field :lname %>
+	</div>
+
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
+
+  <div class="field">
+		<%= f.label :description %><br />
+		<%= f.text_field :description %>
+	</div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
@@ -30,6 +50,16 @@
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
+
+  <div class="field">
+		<%= f.label :worker %><br />
+		<%= f.check_box :worker %>
+	</div>
+
+	<div class="field">
+		<%= f.label :employer %><br />
+		<%= f.check_box :employer %>
+	</div>
 
   <div class="actions">
     <%= f.submit "Update" %>

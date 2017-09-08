@@ -3,15 +3,30 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-	<div class="field">
+		<div class="field">
 		<%= f.label :avatar %><br />
 		<%= f.file_field :avatar %>
+	</div>
+
+	<div class="field">
+		<%= f.label "First Name" %><br />
+		<%= f.text_field :fname %>
+	</div>	
+
+	<div class="field">
+		<%= f.label "Last Name" %><br />
+		<%= f.text_field :lname %>
 	</div>
 
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
+
+  <div class="field">
+		<%= f.label :description %><br />
+		<%= f.text_field :description %>
+	</div>
 
   <div class="field">
     <%= f.label :password %>
@@ -25,6 +40,16 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+
+  <div class="field">
+		<%= f.label :worker %><br />
+		<%= f.check_box :worker %>
+	</div>
+
+	<div class="field">
+		<%= f.label :employer %><br />
+		<%= f.check_box :employer %>
+	</div>
 
   <div class="actions">
     <%= f.submit "Sign up" %>
