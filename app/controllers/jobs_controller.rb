@@ -2,6 +2,7 @@ class JobsController < ApplicationController
 
 	def index
 		@jobs = Job.all
+		@user = current_user
 	end
 
 	def show
@@ -42,6 +43,10 @@ class JobsController < ApplicationController
 
 	def job_params
 		params.require(:job).permit(:id, :user_id, :name, :cost, :description, :location, :category)
+	end
+
+	def user_params
+	    params.require(:user).permit(:fname, :lname, :description, :email, :avatar, :id)
 	end
 
 end
