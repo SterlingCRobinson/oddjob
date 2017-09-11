@@ -1,7 +1,7 @@
 class JobsController < ApplicationController
 
 	def index
-		@jobs = Job.all
+		@jobs = Job.all.sort_by { |r| r.id }.reverse
 	end
 
 	def show
@@ -42,7 +42,7 @@ class JobsController < ApplicationController
 	private
 
 	def job_params
-		params.require(:job).permit(:id, :user_id, :name, :cost, :description, :location, :category)
+		params.require(:job).permit(:id, :user_id, :title, :cost, :description, :location, :category)
 	end
 
 end
