@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="profile">
 	<span><h3><%= @user.fname %></h3>
 	<h3><%= @user.lname %></h3></span>
 	<img src="<%= @user.avatar %>" alt="">
@@ -7,6 +7,6 @@
 	<h4>Overall Rating:</h4> <%= imdb_style_rating_for @user, current_user %>
 	Friendliness: <%= rating_for @user, "user_rating" %>
 	<% if current_user %>
-		<%= link_to "Edit Profile", "/users/edit"%>
+		<%= link_to "Edit Profile", "/users/edit", :class => 'submitty'%>
 	<% end %>
 </div>

@@ -1,5 +1,9 @@
-<div class="wrapper">
-	<h1> Job Form </h1>
+	<br>
+	<br>
+	<br>
+	<div class="wrapper">
+	<div class="form-group">
+	<center><h1> Job Form </h1>
 	<%= form_for @job do |f| %>
 		<%= f.hidden_field :user_id, value: current_user.id %>
 	  <br>
@@ -17,7 +21,10 @@
 	  <br>
 	  <%= f.label :category %>
 	  <%= f.select :category, ["Select One", "Yard Work", "Surveys", "Carpentry"] %>
-	  <br>
-	  <%= f.submit "Submit" %>
+		<br>
+		<br>
+	  <%= f.submit "Submit", :class => 'submitty' %>
+	 </center>
 	<% end %>
-</div>
+    </div>
+  </div>
