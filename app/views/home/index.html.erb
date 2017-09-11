@@ -4,17 +4,30 @@
     <h1>ODD JOBS BOARD</h1><br>
 		<h3>Help your community today.</h3>
 		</center>
-</div>
-<div>
-	<button id="modal-pop">Learn more...</button>
-  <div id="modal" class="hidden">
-  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi enim, tempore accusantium nobis, aperiam, iure ducimus id nostrum earum excepturi incidunt provident atque ab amet aspernatur sit illum. Ut, assumenda!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi enim, tempore accusantium nobis, aperiam, iure ducimus id nostrum earum excepturi incidunt provident atque ab amet aspernatur sit illum. Ut, assumenda!</p>
-	<% if !current_user %>
-		<a href="/users/sign_up"><button>Start Now!</button></a>
-	<% end %>
-  </div>
+	</div>
+
+
+	<div class="modal-container">
+		<button id="modal-pop">Learn more...</button>
+	  <div id="modal" class="hidden">
+	  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi enim, tempore accusantium nobis, aperiam, iure ducimus id nostrum earum excepturi incidunt provident atque ab amet aspernatur sit illum. Ut, assumenda!</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi enim, tempore accusantium nobis, aperiam, iure ducimus id nostrum earum excepturi incidunt provident atque ab amet aspernatur sit illum. Ut, assumenda!</p>
+		<% if !current_user %>
+			<a href="/users/sign_up"><button>Start Now!</button></a>
+		<% end %>
+	</div>
+	<h1>Top Workers !</h1>
+	<div class="user-container">
+	 <div class="user-item">
+			<% @users.each do |user| %>
+				<a href="/users/<%= user.id %>"><img src="<%= user.avatar %>" alt=""> </a>
+				<br>
+				<br>
+				<p><%= user.fname %> <%= user.lname %></p>
+			<% end %>
+		</div>
+	</div>
 </div>
 <script src="js/home.js"></script>
 
