@@ -1,8 +1,20 @@
 <div class="wrapper">
-	<h3><%= @job.title %></h3>
-	<h3><%= @job.location %></h3>
-	<h4><%= @job.cost %></h4>
+	<h3>Title:</h3>
+	<p><%= @job.title %></p>
+	<br>
+	<h3>Posted by:</h3>
+	<h4><%= @u.fname %></h4>
+	<h4><%= @u.lname %></h4>
+	<h3>Location:</h3>
+	<p><%= @job.location %></p>
+	<br>
+	<h4>Cost: $</h4>
+	<p><%= @job.cost %></p>
+	<br>
+	<h4>Description</h4>
 	<p><%= @job.description %></p>
+	<br>
+	<p>Tags:</p>
 	<p><%= @job.category %></p>
 	<% if current_user %>
 		<%= link_to "Edit job", "/jobs/edit"%>
