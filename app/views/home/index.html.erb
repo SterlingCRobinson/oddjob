@@ -13,11 +13,39 @@
 <div class="container">
   <div class="jumbotron">
     <center><h1>ODD JOBS BOARD</h1></center><br>
-    <center><p>Where communities come together through local employment.</p></center>
+
   </div>
-  <p>Top Community employers</p>
-  <p>Top Community workers.</p>
+  <p>Top Community employers</p> <br> <p>Top Community workers.</p>
+
 </div>
+
+<button class="openmodal myBtn">Agenda</button>
+
+<!-- The Modal -->
+ <div class="modal myModal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+  <span class="close">&times;</span>
+  <center><p>Where communities come together through local employment.</p></center>
+  </div>
+</div>
+<script>
+var modals = document.getElementsByClassName('modal');
+// Get the button that opens the modal
+var btns = document.getElementsByClassName("openmodal");
+var spans=document.getElementsByClassName("close");
+for(let i=0;i<btns.length;i++){
+   btns[i].onclick = function() {
+      modals[i].style.display = "block";
+   }
+}
+for(let i=0;i<spans.length;i++){
+    spans[i].onclick = function() {
+       modals[i].style.display = "none";
+    }
+ }
+ </script>
 
 </body>
 </html>
