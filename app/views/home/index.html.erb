@@ -9,6 +9,8 @@
   <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi enim, tempore accusantium nobis, aperiam, iure ducimus id nostrum earum excepturi incidunt provident atque ab amet aspernatur sit illum. Ut, assumenda!</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi enim, tempore accusantium nobis, aperiam, iure ducimus id nostrum earum excepturi incidunt provident atque ab amet aspernatur sit illum. Ut, assumenda!</p>
-	<a href="/sign_up"><button>Start Now!</button></a>
+	<% if !current_user %>
+		<a href="/users/sign_up"><button>Start Now!</button></a>
+	<% end %>
   </div>
 </div>
