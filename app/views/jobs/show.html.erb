@@ -18,7 +18,10 @@
 	<br>
 	<p>Tags:</p>
 		<p><%= @job.category %></p>
-	<% if current_user %>
+	<% if current_user.id != @job.user_id %>
+		<button id="accept">Accept</button>
+	<% else %>
+		<%= link_to "Close Job", @job, method: :delete, data: {confirm: "Are you sure?"}%>
 		<a href="/jobs/<%= @job.id %>/edit">Edit</a>
 	<% end %>
 </div>
