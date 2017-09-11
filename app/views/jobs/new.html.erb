@@ -1,31 +1,30 @@
-<center><h1> Job Form </h1>
-  <br>
+<h1> Job Form </h1>
+	<div class="wrapper">
+		<div class="form-group">
 <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:q, "Job Title:") %>
   <%= text_field_tag(:q) %>
 
 <% end %>
-<br>
 
 <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:q, "Location:") %>
   <%= text_field_tag(:q) %>
 
 <% end %>
-<br>
 
 <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:q, "Cost:") %>
   <%= text_field_tag(:q) %>
 
 <% end %>
-<br>
 <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:q, "Description:") %>
   <%= text_area_tag(:q) %>
-  <br>
-  <br>
-  <%= submit_tag("Submit") %>
+
+  <%= submit_tag("Submit"), :class => 'submitty' %>
 
 <% end %>
-</center>
+	</div>
+</div>
+
