@@ -7,6 +7,7 @@
 		<h4><%= @user.email %></h4>
 	</div>
 	<div class="rating">
+	<h4>About me:</h4>
 	<p><%= @user.description %></p>
 		<span class="rating-display"><p>Friendliness:</p> <%= rating_for @user, "friendliness" %></span>
 		<span class="rating-display"><p>Timing:</p><%= rating_for @user, "timing" %></span>
@@ -16,5 +17,4 @@
 		<% if current_user.id === @user.id %>
 			<%= link_to "Edit Profile", "/users/edit", :class => 'submitty'%>
 		<% end %>
-	<% end %>
 </div>
