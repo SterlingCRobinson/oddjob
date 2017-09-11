@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users, :controllers => { registrations: 'registrations' }
   devise_scope :users {
 		get 'users/:id', to: 'users#show', as:'user'
