@@ -4,7 +4,9 @@
 	<img src="<%= @user.avatar %>" alt="">
 	<h4><%= @user.email %></h4>
 	<p><%= @user.description %></p>
-<% if current_user %>
-	<%= link_to "Edit Profile", "/users/edit", :class => 'submitty' %>
-<% end %>
+	<h4>Overall Rating:</h4> <%= imdb_style_rating_for @user, current_user %>
+	Friendliness: <%= rating_for @user, "user_rating" %>
+	<% if current_user %>
+		<%= link_to "Edit Profile", "/users/edit", :class => 'submitty'%>
+	<% end %>
 </div>
