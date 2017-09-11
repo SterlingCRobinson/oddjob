@@ -11,8 +11,10 @@ class JobsController < ApplicationController
 	end
 
 	def create
+		@user = current_user
 		@job = Job.new(job_params)
-		if @job.save!
+		binding.pry
+		if @job.save
 			redirect_to @job, notice: "Job successfully created" 
 		else
 			render :new
@@ -21,6 +23,7 @@ class JobsController < ApplicationController
 
 	def new
 		@job = Job.new
+		@user = current_user
 	end
 
 	def edit

@@ -1,1 +1,10 @@
-show.html.erb
+<div class="wrapper">
+	<h3><%= @job.title %></h3>
+	<h3><%= @job.location %></h3>
+	<h4><%= @job.cost %></h4>
+	<p><%= @job.description %></p>
+	<p><%= @job.category %></p>
+	<% if current_user %>
+		<%= link_to "Edit job", "/jobs/edit"%>
+	<% end %>
+</div>

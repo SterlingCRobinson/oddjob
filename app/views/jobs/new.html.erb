@@ -1,31 +1,22 @@
 <center><h1> Job Form </h1>
+<%= form_for @job do |f| %>
   <br>
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Job Title:") %>
-  <%= text_field_tag(:q) %>
-
-<% end %>
-<br>
-
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Location:") %>
-  <%= text_field_tag(:q) %>
-
-<% end %>
-<br>
-
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Cost:") %>
-  <%= text_field_tag(:q) %>
-
-<% end %>
-<br>
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Description:") %>
-  <%= text_area_tag(:q) %>
+ 	<%= f.label :title %>
+ 	<%= f.text_field :title %>
+	<br>
+	<%= f.label :location %>
+	<%= f.text_field :location %>
   <br>
+  <%= f.label :cost %>
+  <%= f.number_field :cost %>
   <br>
-  <%= submit_tag("Submit") %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <br>
+  <%= f.label :category %>
+  <%= f.select :category, ["Select One", "Yard Work", "Surveys", "Carpentry"] %>
+  <br>
+  <%= f.submit "Submit" %>
 
 <% end %>
 </center>
