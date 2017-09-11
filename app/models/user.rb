@@ -13,5 +13,5 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   ratyrate_rater
-  ratyrate_rateable "user_rating"
+  ratyrate_rateable "friendliness", "timing", "work_ethic"
 end
