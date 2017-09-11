@@ -1,12 +1,12 @@
-index.html.erb
-
 <div class="wrapper">
+<%= link_to "Create A Job", new_job_path%>
 	<% @jobs.each do |job| %>
-	<p>Job Info</p>
-		<%= jobs.title %>
-	<p>Location:</p>	
+		<p>Job Info</p>
+		<%= job.title %>
+		<p>Location:</p>	
 		<%= job.location %>
-	<p>Price:</p>	
+		<p>Price:</p>	
 		<%= job.cost %>
+		<a href="/jobs/<%= job.id %>">View more</a>
 	<% end %>
 </div>

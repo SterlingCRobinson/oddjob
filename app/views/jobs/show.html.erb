@@ -1,1 +1,27 @@
-show.html.erb
+<div class="wrapper">
+	<a href="/jobs">Back to Job Listing</a>
+	<h3>Title:</h3>
+		<p><%= @job.title %></p>
+	<br>
+	<img src="<%= @u.avatar %>" alt="" width="150px">
+	<h3>Posted by:</h3>
+		<h4><%= @u.fname %></h4>
+		<h4><%= @u.lname %></h4>
+	<h3>Location:</h3>
+		<p><%= @job.location %></p>
+	<br>
+	<h4>Cost: $</h4>
+		<p><%= @job.cost %></p>
+	<br>
+	<h4>Description</h4>
+		<p><%= @job.description %></p>
+	<br>
+	<p>Tags:</p>
+		<p><%= @job.category %></p>
+	<% if current_user.id != @job.user_id %>
+		<button id="accept">Accept</button>
+	<% else %>
+		<%= link_to "Close Job", @job, method: :delete, data: {confirm: "Are you sure?"}%>
+		<a href="/jobs/<%= @job.id %>/edit">Edit</a>
+	<% end %>
+</div>
