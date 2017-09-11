@@ -1,3 +1,11 @@
+.modal-container {
+	margin: 10px;
+}
+
+.modal-container button {
+	margin: 5px;
+}
+
 .hidden {
     display: none;
 }
@@ -24,4 +32,20 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/*.user-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 80%;
+	height: 700px;
+}
+*/
+
+
+.user-container img {
+	width: 100px;
+	margin: 15px;
 }
