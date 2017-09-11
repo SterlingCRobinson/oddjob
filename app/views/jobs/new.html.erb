@@ -1,5 +1,6 @@
 <center><h1> Job Form </h1>
 <%= form_for @job do |f| %>
+	<%= f.hidden_field :user_id, value: current_user.id %>
   <br>
  	<%= f.label :title %>
  	<%= f.text_field :title %>

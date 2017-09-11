@@ -1,4 +1,5 @@
 <div class="wrapper">
+<%= link_to "Create A Job", new_job_path%>
 	<% @jobs.each do |job| %>
 		<p>Job Info</p>
 		<%= job.title %>
@@ -6,5 +7,6 @@
 		<%= job.location %>
 		<p>Price:</p>	
 		<%= job.cost %>
+		<a href="/jobs/<%= job.id %>">View more</a>
 	<% end %>
 </div>

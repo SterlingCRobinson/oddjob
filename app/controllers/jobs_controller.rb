@@ -2,18 +2,16 @@ class JobsController < ApplicationController
 
 	def index
 		@jobs = Job.all
-		@user = current_user
 	end
 
 	def show
 		@job = Job.find_by_id(params[:id])
-		@user = @job.user
+		@user = @job.user_id
+		@u = User.find_by_id(@user)
 	end
 
 	def create
-		@user = current_user
 		@job = Job.new(job_params)
-		binding.pry
 		if @job.save
 			redirect_to @job, notice: "Job successfully created" 
 		else
@@ -23,7 +21,6 @@ class JobsController < ApplicationController
 
 	def new
 		@job = Job.new
-		@user = current_user
 	end
 
 	def edit
@@ -46,10 +43,6 @@ class JobsController < ApplicationController
 
 	def job_params
 		params.require(:job).permit(:id, :user_id, :name, :cost, :description, :location, :category)
-	end
-
-	def user_params
-	    params.require(:user).permit(:fname, :lname, :description, :email, :avatar, :id)
 	end
 
 end
