@@ -1,48 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-
 <div class="container">
   <div class="jumbotron">
     <center><h1>ODD JOBS BOARD</h1></center><br>
 
 </div>
-
-<button class="openmodal myBtn">Agenda</button>
-
-<!-- The Modal -->
- <div class="modal myModal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-  <span class="close">&times;</span>
-  <center><p>Where communities come together through local employment.</p></center>
+<div>
+	<button id="modal-pop">Agenda</button>
+  <div id="modal" class="hidden">
+  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi enim, tempore accusantium nobis, aperiam, iure ducimus id nostrum earum excepturi incidunt provident atque ab amet aspernatur sit illum. Ut, assumenda!</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi enim, tempore accusantium nobis, aperiam, iure ducimus id nostrum earum excepturi incidunt provident atque ab amet aspernatur sit illum. Ut, assumenda!</p>
   </div>
 </div>
-<script>
-var modals = document.getElementsByClassName('modal');
-// Get the button that opens the modal
-var btns = document.getElementsByClassName("openmodal");
-var spans=document.getElementsByClassName("close");
-for(let i=0;i<btns.length;i++){
-   btns[i].onclick = function() {
-      modals[i].style.display = "block";
-   }
-}
-for(let i=0;i<spans.length;i++){
-    spans[i].onclick = function() {
-       modals[i].style.display = "none";
-    }
- }
- </script>
-
-</body>
-</html>
