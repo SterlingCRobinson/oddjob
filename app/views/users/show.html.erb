@@ -8,12 +8,13 @@
 	</div>
 	<div class="rating">
 	<p><%= @user.description %></p>
-	<% if current_user %>
 		<span class="rating-display"><p>Friendliness:</p> <%= rating_for @user, "friendliness" %></span>
 		<span class="rating-display"><p>Timing:</p><%= rating_for @user, "timing" %></span>
 		<span class="rating-display"><p>Work Ethic:</p><%= rating_for @user, "work_ethic" %></span>
 	</div>
 		<br>
-		<%= link_to "Edit Profile", "/users/edit", :class => 'submitty'%>
+		<% if current_user.id === @user.id %>
+			<%= link_to "Edit Profile", "/users/edit", :class => 'submitty'%>
+		<% end %>
 	<% end %>
 </div>
