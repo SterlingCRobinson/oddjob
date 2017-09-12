@@ -1,11 +1,18 @@
 <br>
-<div class="wrapper">
-	<center>
+<div class="wrapper fit_inside">
+	<table class="table">
+ <thead>
+	 <tr>
+		 <th>Job Info:</th>
+		 <th>Location:</th>
+		 <th>Job Name:</th>
+		 <th>Job Name:</th>
 <%= link_to "Create A Job", new_job_path%>
 <br>
 <br>
+
 	<% @jobs.each do |job| %>
-		<p>Job Info: <%= job.title %></p>
+		 Job Info: <%= job.title %></p>
 		<p>Location: <%= job.location %></p>
 		<p>Price: <%= job.cost %><a href="/jobs/<%= job.id %>">View more</a></p>
 
