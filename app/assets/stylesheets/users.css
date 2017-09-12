@@ -18,3 +18,19 @@
   font-size: 17px;
   background-color: #FF3B3F;
 }
+
+.info {
+	width: 400px;
+	margin-right: 0px	;
+	border: 2px solid black;
+}
+
+.rating {
+	float: right;
+}
+
+.rating-display {
+	display: inline-block;
+	margin: 10px;
+}
+

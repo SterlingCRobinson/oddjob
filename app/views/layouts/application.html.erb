@@ -3,10 +3,11 @@
   <head>
     <title>OddJob</title>
     <%= csrf_meta_tags %>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'ratyrate.js', "data-turbolinks-track": false %>
   </head>
 
   <body>
@@ -22,8 +23,6 @@
 		  <% end %>
 		</div>
     <%= yield %>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/home.js"></script>
   </body>
 </html>

@@ -1,10 +1,20 @@
 <div class="profile">
-	<span><h3><%= @user.fname %></h3>
-	<h3><%= @user.lname %></h3></span>
-	<img src="<%= @user.avatar %>" alt="">
-	<h4><%= @user.email %></h4>
+	<div class="info">
+		<h3><%= @user.fname %> <%= @user.lname %></h3>
+		<div class="pro-pic">
+			<img src="<%= @user.avatar %>" alt="">
+		</div>
+		<h4><%= @user.email %></h4>
+	</div>
+	<div class="rating">
+	<h4>About me:</h4>
 	<p><%= @user.description %></p>
-<% if current_user %>
-	<%= link_to "Edit Profile", "/users/edit", :class => 'submitty' %>
-<% end %>
+		<span class="rating-display"><p>Friendliness:</p> <%= rating_for @user, "friendliness" %></span>
+		<span class="rating-display"><p>Timing:</p><%= rating_for @user, "timing" %></span>
+		<span class="rating-display"><p>Work Ethic:</p><%= rating_for @user, "work_ethic" %></span>
+	</div>
+		<br>
+		<% if current_user.id === @user.id %>
+			<%= link_to "Edit Profile", "/users/edit", :class => 'submitty'%>
+		<% end %>
 </div>
