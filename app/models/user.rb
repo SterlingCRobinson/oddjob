@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-
+	#create user method for avg of ratings
 	has_many :jobs
 	has_attached_file :avatar, 
 	styles: { medium: "300x300>", thumb: "100x100>" }, 
@@ -13,4 +13,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   ratyrate_rater
   ratyrate_rateable "overall", "friendliness", "timing", "work_ethic"
+
+  def sorting_rating()
+   (self.average("timing").avg + self.average("friendliness").avg + self.average("work_ethic").avg) / 3
+  end
 end
