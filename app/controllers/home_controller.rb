@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 	def index
 		@user = current_user
-		@users = User.all.last(5).sort_by { |r| r.id }.reverse
+		@users = User.includes(:rate_average_without_dimension).order("rating_caches.avg desc")
 	end
 
 	private
