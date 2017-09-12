@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 	def index
 		@user = current_user
-		@users = User.all.sort_by { |r| r.id }.reverse
+		@users = User.all.last(5).sort_by { |r| r.id }.reverse
 	end
 
 	private
