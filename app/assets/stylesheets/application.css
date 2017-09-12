@@ -20,10 +20,8 @@ body {
 
 .navbar {
     background-color: #FF3B3F;
-    overflow: hidden;
-    width: 105%;
+    width: 100%;
     margin-top: -8px;
-    margin-left: -8px;
     margin-bottom: 10px;
     box-shadow: 3px 3px 3px black;
 }
@@ -50,7 +48,7 @@ body {
 	max-width: 540px;
 	padding: 10px;
 	border-radius: 10px;
-	border: 5px solid black;
+	box-shadow: 3px 3px 3px black;
 }
 
 .submitty {

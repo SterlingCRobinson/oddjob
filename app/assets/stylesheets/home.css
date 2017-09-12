@@ -1,10 +1,6 @@
 .modal-container {
 	margin: 10px;
-}
-
-.modal-container button {
-	margin: 5px;
-}
+} 
 
 .hidden {
     display: none;
@@ -39,10 +35,12 @@
 	background-color: #FF3B3F;
 	box-shadow: 3px 3px 3px black;
 	color: white;
+	display: inline-block;
+	width: 100%;
 }
 
 #modal-pop {
-		outline: none;
+	outline: none;
 	border: 1px solid black;
 	padding: 5px 5px;
 	border-radius: 2px;
@@ -54,10 +52,11 @@
   font-size: 17px;
   background-color: #FF3B3F;
   box-shadow: 3px 3px 3px black;
+  margin-bottom: 15px
 }
 
-.startnow {
-			outline: none;
+.startbtn {
+	outline: none;
 	border: 1px solid black;
 	padding: 5px 5px;
 	border-radius: 2px;
@@ -87,3 +86,13 @@
 	margin: 15px;
 }
 
+.modal-wrapper {
+	display: inline-block;
+	margin: 0 auto;
+	background-color: #A9A9A9;
+	width: 100%;
+	max-width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px black;
+}
