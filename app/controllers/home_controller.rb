@@ -1,9 +1,8 @@
 class HomeController < ApplicationController
-	def index
+def index
 		@user = current_user
-		@users = User.includes(:rate_average_without_dimension).limit(5).order("rating_caches.avg desc")
-	end
-
+		@users = User.all.sort_by { |r| r.average("timing").avg }.first(5).reverse
+end
 	private
 
 	def user_params

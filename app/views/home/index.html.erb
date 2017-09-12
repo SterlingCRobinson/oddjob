@@ -19,7 +19,7 @@
 		</div>
 	</div>
 	<div class="user-container">
-		<h1>Top Workers !</h1>
+		<h1>Top Workers</h1>
 				<% @users.each do |user| %>
 					<div class="user-item">
 						<a href="/users/<%= user.id %>"><img src="<%= user.avatar %>" alt=""> </a>
@@ -32,5 +32,3 @@
 </div>
 
 <script src="/js/home.js"></script>
-
-
