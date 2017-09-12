@@ -16,7 +16,9 @@
 	<p><%= @user.description %></p>
 	</div>
 		<br>
-		<% if current_user.id === @user.id %>
-			<%= link_to "Edit Profile", "/users/edit", :class => 'submitty'%>
+		<% if current_user %>
+			<% if current_user.id === @user.id %>
+				<%= link_to "Edit Profile", "/users/edit", :class => 'submitty'%>
+			<% end %>
 		<% end %>
 </div>

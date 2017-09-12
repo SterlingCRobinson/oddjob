@@ -1,22 +1,24 @@
 <div class="wrapper">
-	<%= form_for @job do |f| %>
-		<%= f.hidden_field :user_id, value: current_user.id %>
-	  <br>
-	 	<%= f.label :title %>
-	 	<%= f.text_field :title %>
-		<br>
-		<%= f.label :location %>
-		<%= f.text_field :location %>
-	  <br>
-	  <%= f.label :cost %>
-	  <%= f.number_field :cost %>
-	  <br>
-	  <%= f.label :description %>
-	  <%= f.text_field :description %>
-	  <br>
-	  <%= f.label :category %>
-	  <%= f.select :category, ["Select One", "Yard Work", "Surveys", "Carpentry"] %>
-	  <br>
-	  <%= f.submit "Submit" %>
-	<% end %>
+	<div class="form-group">
+		<%= form_for @job do |f| %>
+			<%= f.hidden_field :user_id, value: current_user.id %>
+		  <br>
+		 	<%= f.label :title %>
+		 	<%= f.text_field :title %>
+			<br>
+			<%= f.label :location %>
+			<%= f.text_field :location %>
+		  <br>
+		  <%= f.label :cost %>
+		  <%= f.number_field :cost %>
+		  <br>
+		  <%= f.label :description %>
+		  <%= f.text_field :description %>
+		  <br>
+		  <%= f.label :category %>
+		  <%= f.select :category,["Select One", "Yard Work", "Surveys", "Carpentry", "Pluming", "Automotive", "I.T.", "Design/Art", "Electrical", "Moving", "Personal Shopper", "Babysitter", "Locksmith", "Other"] %>
+		  <br>
+		  <%= f.submit "Submit" %>
+		<% end %>
+	</div>
 </div>
