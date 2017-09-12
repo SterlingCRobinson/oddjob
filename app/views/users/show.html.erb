@@ -1,17 +1,19 @@
 <div class="profile">
 	<div class="info">
-		<h3><%= @user.fname %> <%= @user.lname %></h3>
+		<h3><%= @user.fname %> <%= @user.lname %> </h3>
 		<div class="pro-pic">
 			<img src="<%= @user.avatar %>" alt="">
-		</div>
-		<h4><%= @user.email %></h4>
-	</div>
-	<div class="rating">
-	<h4>About me:</h4>
-	<p><%= @user.description %></p>
+				<div class="rating">
 		<span class="rating-display"><p>Friendliness:</p> <%= rating_for @user, "friendliness" %></span>
 		<span class="rating-display"><p>Timing:</p><%= rating_for @user, "timing" %></span>
 		<span class="rating-display"><p>Work Ethic:</p><%= rating_for @user, "work_ethic" %></span>
+	</div>
+		</div>
+		<h4>E-mail <%= @user.email %></h4>
+	</div>
+	<div class="description">
+		<h4>About me:</h4>
+	<p><%= @user.description %></p>
 	</div>
 		<br>
 		<% if current_user.id === @user.id %>
