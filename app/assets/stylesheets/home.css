@@ -108,8 +108,23 @@
 	background-color: #A9A9A9;
 	width: 100%;
 	max-width: 1200px;
-	height: 200px;
+	height: 100%;
 	padding: 10px;
+	padding-left: 85px;
+	padding-right: 70px;
 	border-radius: 10px;
 	box-shadow: 3px 3px 3px black;
+	margin-top: 15px;
+}
+
+.user-item {
+	text-align: center;
+	width: 150px;
+	float: left;
+	margin: 20px;
+	font-size: 16px;
+}
+
+.user-item img {
+	margin-bottom: 10px;
 }

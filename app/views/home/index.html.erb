@@ -18,17 +18,17 @@
 		<% end %>
 		</div>
 	</div>
-	<h1>Top Workers !</h1>
 	<div class="user-container">
-	 <div class="user-item">
-			<% @users.each do |user| %>
-				<a href="/users/<%= user.id %>"><img src="<%= user.avatar %>" alt=""> </a>
-				<br>
-				<br>
-				<p><%= user.fname %> <%= user.lname %></p>
-			<% end %>
+		<h1>Top Workers !</h1>
+				<% @users.each do |user| %>
+					<div class="user-item">
+						<a href="/users/<%= user.id %>"><img src="<%= user.avatar %>" alt=""> </a>
+						<br>
+						<br>
+						<p><strong><%= user.fname %> <%= user.lname %></strong></p>
+					</div>
+				<% end %>
 		</div>
-	</div>
 </div>
 
 <script src="/js/home.js"></script>
