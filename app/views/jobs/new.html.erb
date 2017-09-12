@@ -3,7 +3,7 @@
 	<br>
 	<div class="wrapper">
 	<div class="form-group">
-	<center><h1> Job Form </h1>
+	<h1> Job Form </h1>
 	<%= form_for @job do |f| %>
 		<%= f.hidden_field :user_id, value: current_user.id %>
 	  <br>
@@ -24,7 +24,6 @@
 		<br>
 		<br>
 	  <%= f.submit "Submit", :class => 'submitty' %>
-	 </center>
 	<% end %>
     </div>
   </div>
