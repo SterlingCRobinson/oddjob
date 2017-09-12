@@ -137,3 +137,7 @@ body {
     z-index: 30;
     padding: 10px;
 }
+
+.submitty:hover {
+	cursor: pointer;
+}

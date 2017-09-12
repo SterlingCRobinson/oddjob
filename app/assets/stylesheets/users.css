@@ -1,12 +1,11 @@
 .profile {
 	margin: 0 auto;
-	background-color: #CAEBF2;
+	background-color: #A9A9A9;
 	width: 100%;
 	max-width: 90%;
 	padding: 10px;
 	border-radius: 10px;
-	box-shadow: 3px 2px #A9A9A9;
-	border: solid 2px #A9A9A9;
+	box-shadow: 3px 3px 3px black;
 }
 
 .submitty {
@@ -26,11 +25,9 @@
 }
 
 .rating {
-	float: right;
+	margin-bottom: 20px;
+	display: inline-block;
 }
 
-.rating-display {
-	display: inline-block;
-	margin: 10px;
-}
+
 
