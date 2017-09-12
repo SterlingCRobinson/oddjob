@@ -19,7 +19,8 @@
 }
 
 .info {
-	width: 400px;
+	display: inline-block;
+	width: 380px;
 	margin-right: 0px	;
 	border: 2px solid black;
 }

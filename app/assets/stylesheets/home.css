@@ -96,3 +96,14 @@
 	border-radius: 10px;
 	box-shadow: 3px 3px 3px black;
 }
+
+.user-container {
+	display: inline-block;
+	margin: 0 auto;
+	background-color: #A9A9A9;
+	width: 100%;
+	max-width: 1200px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px black;
+}
