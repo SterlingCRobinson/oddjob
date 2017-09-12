@@ -6,6 +6,7 @@
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: 3px 3px 3px black;
+	height: 500px;
 }
 
 .submitty {
@@ -19,16 +20,31 @@
 }
 
 .info {
-	display: inline-block;
-	width: 380px;
-	margin-right: 0px	;
-	border: 2px solid black;
+	text-align: center;
+	display: block;
+	width: 35%;
+	float: left;
 }
 
-.rating {
-	margin-bottom: 20px;
-	display: inline-block;
+.info img {
+	margin-bottom: 15px;
+	border: 6px solid black;
 }
 
+.rating-display {
+	display: inline-block;
+	margin: 15px;
+	margin-bottom: 100px;
+}
 
+.profile-right {
+	font-size: 20px;
+	float: right;
+	width: 49%;
+	margin-top: 10px;
+	margin-right: 10px;
+}
 
+.edit-button {
+	float: right;
+}
