@@ -1,21 +1,34 @@
-<br>
-<div class="wrapper fit_inside">
-	<table class="table">
- <thead>
+
+	<div class="wrapper fit_inside">
+		<table class="table">
+	 <thead>
+		 <% if current_user %>
+
+	 		<%= link_to "Create A Job", new_job_path%>
+	 		<% end %>
+
 	 <tr>
-		 <th>Job Info:</th>
-		 <th>Location:</th>
-		 <th>Job Name:</th>
-		 <th>Job Name:</th>
-<%= link_to "Create A Job", new_job_path%>
-<br>
-<br>
+		 <th>Job Info</th>
+		 <th>Location</th>
+		 <th>Price</th>
+</tr>
+<thead>
+	<tbody>
+		<tr>
+			<% @jobs.each do |job| %>
+				 	<td><a href="/jobs/<%= job.id %>"><%= job.title %></a></td>
+					<td><%= job.location %></td>
+				 	<td><%= job.cost %></td>
+				 <% end %>
+			 </tr>
+		</tbody>
+	</table>
 
-	<% @jobs.each do |job| %>
-		 Job Info: <%= job.title %></p>
-		<p>Location: <%= job.location %></p>
-		<p>Price: <%= job.cost %><a href="/jobs/<%= job.id %>">View more</a></p>
 
-	<% end %>
-	</center>
+
+
+
+
+
+
 </div>

@@ -1,4 +1,8 @@
-.job-user {
+.div{
+	text-align: center;
+}
+
+.job-title {
 	float: right;
 	text-align: center;
 	margin-right: 20px;
@@ -35,7 +39,13 @@
 	display: block;
 }
 
+
+
+
+
+
 .wrapper-job {
+	text-align: center;
 	margin: 0 auto;
 	background-color: #A9A9A9;
 	width: 100%;
