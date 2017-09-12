@@ -12,23 +12,15 @@
 		 <th>Location</th>
 		 <th>Price</th>
 </tr>
-<thead>
+</thead>
 	<tbody>
-		<tr>
 			<% @jobs.each do |job| %>
+				<tr>
 				 	<td><a href="/jobs/<%= job.id %>"><%= job.title %></a></td>
 					<td><%= job.location %></td>
 				 	<td><%= job.cost %></td>
+				</tr>
 				 <% end %>
-			 </tr>
 		</tbody>
 	</table>
-
-
-
-
-
-
-
-
 </div>

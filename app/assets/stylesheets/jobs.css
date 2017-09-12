@@ -1,3 +1,4 @@
+
 .div{
 	text-align: center;
 }
@@ -39,7 +40,70 @@
 	display: block;
 }
 
+.job-post {
+	display: block;
+	width: 100%;
+}
 
+.table table {
+    width: 600px;
+
+    margin-bottom: 1rem;
+    background-color: transparent;
+		table-layout: fixed;
+
+}
+
+.table p {
+	margin: 0;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #e9ecef;
+    word-wrap: break-word;
+		text-align: center;
+}
+.table tr {
+	width: 100%;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #e9ecef;
+		text-align: center;
+}
+
+.hover-description {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+}
+.hover-description:hover {
+    overflow: visible;
+    color: transparent;
+    user-select: none;
+}
+
+.hover-description:after {
+    content: attr(data-description);
+    opacity: 0;
+    transition: .2s ease-in-out all;
+}
+
+.hover-description:hover:after {
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    color: white;
+    white-space: normal;
+    max-width: 230px;
+    background: #444;
+    z-index: 30;
+    padding: 10px;
+}
 
 
 
