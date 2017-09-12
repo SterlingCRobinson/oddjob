@@ -3,7 +3,7 @@
 	text-align: center;
 }
 
-.job-title {
+.job-user {
 	float: right;
 	text-align: center;
 	margin-right: 20px;
@@ -105,15 +105,11 @@
     padding: 10px;
 }
 
-
-
-
 .wrapper-job {
-	text-align: center;
 	margin: 0 auto;
 	background-color: #A9A9A9;
 	width: 100%;
-	max-width: 640px;
+	max-width: 850px;
 	padding: 10px;
 	border-radius: 10px;
 	border: 5px solid black;
