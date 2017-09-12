@@ -14,4 +14,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   ratyrate_rater
   ratyrate_rateable "overall", "friendliness", "timing", "work_ethic"
+  has_one :rate_average_without_dimension, -> { where dimension: nil}, :as => :cacheable, :class_name => "RatingCache", :dependent => :destroy
 end
