@@ -113,5 +113,9 @@
 	padding: 10px;
 	border-radius: 10px;
 	border: 5px solid black;
-	height: 470px;
+	height: 100%;
+}
+
+.desc {
+	width: 75%;
 }
