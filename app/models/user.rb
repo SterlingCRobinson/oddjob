@@ -15,6 +15,6 @@ class User < ApplicationRecord
   ratyrate_rateable "overall", "friendliness", "timing", "work_ethic"
 
   def sorting_rating()
-   (self.average("timing").avg + self.average("friendliness").avg + self.average("work_ethic").avg) / 3
+   ((self.average("timing") ? self.average("timing").avg : 0 ) + (self.average("friendliness") ? self.average("friendliness").avg : 0) + (self.average("work_ethic") ? self.average("work_ethic").avg : 0)) / 3
   end
 end
