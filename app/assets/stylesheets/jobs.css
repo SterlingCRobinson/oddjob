@@ -16,19 +16,7 @@
 }
 
 #accept {
-	cursor: pointer;
-	outline: none;
-	border: 1px solid black;
-	margin-bottom: 5px;
-	width: 120px;
-	height: 40px;
-	border-radius: 2px;
-	display: inline;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  background-color: #FF3B3F;
+	margin-bottom: 8px;
 }
 
 #accept:disabled {

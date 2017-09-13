@@ -9,8 +9,8 @@
 			<% if current_user.id != @job.user_id %>
 				<button id="accept" class="accept-btn">Accept</button>
 			<% else %>
-				<%= button_to "Close Job", @job, method: :delete, :id=> "accept", data: {confirm: "Are you sure?"}%>
-				<a href="/jobs/<%= @job.id %>/edit"><button id="accept">Edit</button></a>
+				<%= button_to "Close Job", @job, :class=> "submitty", method: :delete, :id=> "accept", data: {confirm: "Are you sure?"}%>
+				<a href="/jobs/<%= @job.id %>/edit"><button class="submitty" id="accept">Edit</button></a>
 			<% end %>
 		</div>
 	</div>
