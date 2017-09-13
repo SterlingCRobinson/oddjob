@@ -57,14 +57,14 @@
   text-decoration: none;
   font-size: 17px;
   background-color: #FF3B3F;
-  box-shadow: 3px 3px 3px black;
   margin-bottom: 15px
 }
 
 #modal-pop:hover {
 	text-decoration: underline;
 	background-color: #ff4c50;
-	color: black
+	color: black;
+	box-shadow: 3px 3px 3px black;
 }
 
 .startbtn {
@@ -79,7 +79,11 @@
   text-decoration: none;
   font-size: 17px;
   background-color: #FF3B3F;
-  box-shadow: 3px 3px 3px black;
+  
+}
+
+.startbtn {
+	box-shadow: 3px 3px 3px black;
 }
 
 /*.user-container {

@@ -72,7 +72,8 @@ body {
 .submitty:hover {
 		text-decoration: underline;
 		background-color: #ff4c50;
-		color: black
+		color: black;
+		box-shadow: 3px 3px 3px black;
 	}
 
 .wrapper.fit_inside {
