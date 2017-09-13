@@ -20,8 +20,19 @@
 }
 
 #accept:disabled {
-	background-color: blue;
 	cursor: default;
+	outline: none;
+	border: 1px solid black;
+	padding: 5px 5px;
+	border-radius: 2px;
+	display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 17px;
+	text-decoration: underline;
+	background-color: #ff4c50;
+	color: black;
 }
 
 .job-user .job-btn {

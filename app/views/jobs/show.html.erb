@@ -7,7 +7,7 @@
 		<img src="<%= @u.avatar %>" alt="" width="150px">
 		<div class="job-btn">
 			<% if current_user.id != @job.user_id %>
-				<button id="accept" class="accept-btn">Accept</button>
+				<button class="submitty" id="accept">Accept</button>
 			<% else %>
 				<%= button_to "Close Job", @job, :class=> "submitty", method: :delete, :id=> "accept", data: {confirm: "Are you sure?"}%>
 				<a href="/jobs/<%= @job.id %>/edit"><button class="submitty" id="accept">Edit</button></a>
@@ -28,4 +28,4 @@
 	<br>
 	<p>Tags: <strong><%= @job.category %></strong></p>
 </div>
-<script src="/js/jobs.js"></script>
+<script type="text/javascript" src="/js/jobs.js"></script>

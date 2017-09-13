@@ -18,6 +18,11 @@ body {
 	background-color: #565656;
 }
 
+th {
+	font-size: 20px;
+	text-decoration: underline;
+}
+
 .navbar {
     background-color: #FF3B3F;
     width: 100%;
