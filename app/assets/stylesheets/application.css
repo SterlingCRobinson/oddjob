@@ -37,8 +37,11 @@ body {
 }
 
 .navbar a:hover {
-    background-color: lightgrey;
+    background-color: #ff4c50;
     color: black;
+    border: solid black 1px;
+    text-decoration: underline;
+    border-radius: 2px;
 }
 
 .wrapper {
@@ -49,6 +52,7 @@ body {
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: 3px 3px 3px black;
+	margin-bottom: 12px;
 }
 
 .submitty {
