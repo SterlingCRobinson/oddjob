@@ -61,6 +61,12 @@
   margin-bottom: 15px
 }
 
+#modal-pop:hover {
+	text-decoration: underline;
+	background-color: #ff4c50;
+	color: black
+}
+
 .startbtn {
 	outline: none;
 	border: 1px solid black;
