@@ -3,7 +3,7 @@
 	<div class="info">
 		<h3><%= @user.fname %> <%= @user.lname %> </h3>
 		<div class="pro-pic">
-			<img src="<%= @user.avatar %>" alt="" width="250px">
+			<img src="<%= image_tag @user.photo.url %>(:medium)" alt="">
 		</div>
 		<h4>E-mail: <%= @user.email %></h4>
 	</div>
