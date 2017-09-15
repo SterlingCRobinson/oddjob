@@ -10,7 +10,7 @@
 				<button class="submitty" id="accept">Accept</button>
 			<% else %>
 				<%= button_to "Close Job", @job, :class=> "submitty", method: :delete, data: {confirm: "Are you sure?"}%>
-				<a href="/jobs/<%= @job.id %>/edit"><button class="submitty" id="accept">Edit</button></a>
+				<a href="/jobs/<%= @job.id %>/edit"><button class="submitty">Edit</button></a>
 			<% end %>
 		</div>
 	</div>
