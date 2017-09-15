@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 20170911201056) do
 
-  create_table "average_caches", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "average_caches", id: :serial, force: :cascade do |t|
     t.integer "rater_id"
     t.string "rateable_type"
     t.integer "rateable_id"
@@ -32,7 +35,7 @@ ActiveRecord::Schema.define(version: 20170911201056) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "overall_averages", force: :cascade do |t|
+  create_table "overall_averages", id: :serial, force: :cascade do |t|
     t.string "rateable_type"
     t.integer "rateable_id"
     t.float "overall_avg", null: false
@@ -40,7 +43,7 @@ ActiveRecord::Schema.define(version: 20170911201056) do
     t.datetime "updated_at"
   end
 
-  create_table "rates", force: :cascade do |t|
+  create_table "rates", id: :serial, force: :cascade do |t|
     t.integer "rater_id"
     t.string "rateable_type"
     t.integer "rateable_id"
@@ -52,7 +55,7 @@ ActiveRecord::Schema.define(version: 20170911201056) do
     t.index ["rater_id"], name: "index_rates_on_rater_id"
   end
 
-  create_table "rating_caches", force: :cascade do |t|
+  create_table "rating_caches", id: :serial, force: :cascade do |t|
     t.string "cacheable_type"
     t.integer "cacheable_id"
     t.float "avg", null: false
