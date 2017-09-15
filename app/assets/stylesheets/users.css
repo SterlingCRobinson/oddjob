@@ -6,6 +6,9 @@
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: 3px 3px 3px black;
+	display: flex;
+  flex-direction: row;
+  min-height: 100vh;
 }
 
 .submitty {
@@ -24,7 +27,6 @@
 	display: block;
 	width: 35%;
 	float: left;
-	height: 100%;
 }
 
 .info img {
@@ -36,7 +38,7 @@
 .rating-display {
 	display: inline-block;
 	margin: 15px;
-	margin-bottom: 100px;
+	margin-bottom: 30px;
 }
 
 .profile-right {
@@ -44,8 +46,7 @@
 	float: right;
 	width: 49%;
 	margin-top: 10px;
-	margin-right: 10px;
-	height: 100%;
+	margin-left: 150px;
 }
 
 .edit-button {
