@@ -1,0 +1,416 @@
+.modal-container {
+	margin: 10px;
+} 
+
+.hidden {
+    display: none;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: lightgray;
+    text-align: center;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.jumbotron {
+	background-color: #FF3B3F;
+	box-shadow: 3px 3px 3px black;
+	color: white;
+	display: inline-block;
+	width: 100%;
+	height: 350px;
+	border: 2px solid white;
+}
+
+.jumbotron img {
+	margin-top: 50px;
+}
+
+#modal-pop {
+	outline: none;
+	border: 1px solid black;
+	padding: 5px 5px;
+	border-radius: 2px;
+	display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #FF3B3F;
+  margin-bottom: 15px
+}
+
+#modal-pop:hover {
+	text-decoration: underline;
+	background-color: #ff4c50;
+	color: black;
+	box-shadow: 3px 3px 3px black;
+}
+
+.startbtn {
+	outline: none;
+	border: 1px solid black;
+	padding: 5px 5px;
+	border-radius: 2px;
+	display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #FF3B3F;
+  
+}
+
+.startbtn {
+	box-shadow: 3px 3px 3px black;
+}
+
+/*.user-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 80%;
+	height: 700px;
+}
+*/
+
+
+.user-container img {
+	width: 100px;
+	margin: 15px;
+}
+
+.modal-wrapper {
+	display: inline-block;
+	margin: 0 auto;
+	background-color: #A9A9A9;
+	width: 100%;
+	max-width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px black;
+}
+
+.user-container {
+	display: inline-block;
+	margin: 0 auto;
+	background-color: #A9A9A9;
+	width: 100%;
+	max-width: 1200px;
+	height: 100%;
+	padding: 10px;
+	padding-left: 85px;
+	padding-right: 70px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px black;
+	margin-top: 15px;
+}
+
+.user-item {
+	text-align: center;
+	width: 150px;
+	float: left;
+	margin: 20px;
+	font-size: 16px;
+	border: 3px solid black;
+	padding: 2px;
+}
+
+.user-item img {
+	margin-bottom: 10px;
+}
+
+.div{
+	text-align: center;
+}
+
+.job-user {
+	float: right;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.job-user img {
+	border: 4px solid black;
+	margin: 2px;
+	margin-bottom: 15px;
+}
+
+#accept {
+	margin-bottom: 8px;
+}
+
+#accept:disabled {
+	cursor: default;
+	outline: none;
+	border: 1px solid black;
+	padding: 5px 5px;
+	border-radius: 2px;
+	display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 17px;
+	text-decoration: underline;
+	background-color: #ff4c50;
+	color: black;
+}
+
+.job-user .job-btn {
+	display: block;
+}
+
+.job-post {
+	display: block;
+	width: 100%;
+}
+
+.table table {
+    width: 600px;
+
+    margin-bottom: 1rem;
+    background-color: transparent;
+		table-layout: fixed;
+
+}
+
+.table p {
+	margin: 0;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #e9ecef;
+    word-wrap: break-word;
+		text-align: center;
+}
+.table tr {
+	width: 100%;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #e9ecef;
+		text-align: center;
+}
+
+.hover-description {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+}
+.hover-description:hover {
+    overflow: visible;
+    color: transparent;
+    user-select: none;
+}
+
+.hover-description:after {
+    content: attr(data-description);
+    opacity: 0;
+    transition: .2s ease-in-out all;
+}
+
+.hover-description:hover:after {
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    color: white;
+    white-space: normal;
+    max-width: 230px;
+    background: #444;
+    z-index: 30;
+    padding: 10px;
+}
+
+.wrapper-job {
+	margin: 0 auto;
+	background-color: #A9A9A9;
+	width: 100%;
+	max-width: 850px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px;
+	height: 100%;
+}
+
+.desc {
+	width: 75%;
+}
+.profile {
+	margin: 0 auto;
+	background-color: #A9A9A9;
+	width: 100%;
+	max-width: 90%;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px black;
+	height: 500px;
+}
+
+.submitty {
+	display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #FF3B3F;
+  margin: 2px;
+}
+
+.info {
+	text-align: center;
+	display: block;
+	width: 35%;
+	float: left;
+}
+
+.info img {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	border: 6px solid black;
+}
+
+.rating-display {
+	display: inline-block;
+	margin: 15px;
+	margin-bottom: 100px;
+}
+
+.profile-right {
+	font-size: 20px;
+	float: right;
+	width: 49%;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.edit-button {
+	float: right;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+body {
+	background-color: #565656;
+}
+
+th {
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+.navbar {
+    background-color: #FF3B3F;
+    width: 100%;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 3px black;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ff4c50;
+    color: black;
+    border: solid black 1px;
+    text-decoration: underline;
+    border-radius: 2px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	background-color: #A9A9A9;
+	width: 100%;
+	max-width: 540px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px black;
+	margin-bottom: 12px;
+}
+
+.submitty {
+	outline: none;
+	border: 1px solid black;
+	padding: 5px 5px;
+	border-radius: 2px;
+	display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #FF3B3F;
+}
+
+.submitty:hover {
+		text-decoration: underline;
+		background-color: #ff4c50;
+		color: black;
+		box-shadow: 3px 3px 3px black;
+	}
+
+.wrapper.fit_inside {
+	width: 100%;
+	max-width: 1200px;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.submitty:hover {
+	cursor: pointer;
+}
