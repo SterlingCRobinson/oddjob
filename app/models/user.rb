@@ -14,6 +14,12 @@ class User < ApplicationRecord
   ratyrate_rater
   ratyrate_rateable "overall", "friendliness", "timing", "work_ethic"
 
+  before_post_process :check_file_size
+	def check_file_size
+  	valid?
+  	errors[:avatar_file_size].blank?
+	end
+
   def sorting_rating()
    ((self.average("timing") ? self.average("timing").avg : 0 ) + (self.average("friendliness") ? self.average("friendliness").avg : 0) + (self.average("work_ethic") ? self.average("work_ethic").avg : 0)) / 3
   end
